@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding:0;
+    background: #262626;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    /*background-image: url('./img/bg.jpg');
+    background-position: top center;
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 50s linear infinite 0s;
+    animation-timing-function: ease-in-out;*/
+
+}
+@keyframes slideBg{
+    0%{
+        background-image: url('./img/bg.jpg');
+    }
+    15%{
+        background-image: url('./img/bg2.jpg');  
+    }
+    30%{
+        background-image: url('./img/bg3.PNG');
+    }
+    45%{
+        background-image: url('./img/bg4.PNG');
+    }
+    60%{
+        background-image: url('./img/bg5.PNG');
+    }
+    75%{
+        background-image: url('./img/bg6.PNG');
+    }
+    90%{
+        background-image: url('./img/bg7.jpg');
+    }
+    100%{
+        background-image: url('./img/bg8.jpg');
+    }
+}
+.center{
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+h1{
+    font-size:1em;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    opacity: 0.9;
+}
+h1 span{
+    padding-top: 20px;
+    font-size: 2em;
+    line-height: 0.8em;
+}
+#clock{
+    display: flex;
+    
+    margin:20px auto;
+}
+#clock div{
+    position: relative;
+    width:100px;
+    padding:20px;
+    margin: 0 5px;
+    background: #262626;
+    color:#fff;
+    border:2px solid black;
+}
+#clock div:last-child{
+    background: #e91e63;
+}
+#clock div:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:50%;
+    background: rgba(255,255,255,0.2);
+}
+#clock div span{
+    display: block;
+    text-align: center;
+}
+#clock div span:nth-child(1){
+    font-size:48px;
+    font-weight: 800;
+}
+#clock div span:nth-child(2){
+    font-size:18px;
+    font-weight: 800;
+}
+h3{
+    color: #fff;
+    margin-top: 50px;
+}
+h4{
+    color:white;
+    
+    padding: 5px auto;
+    
+    background-color: rgba(250, 219, 216 ,0.4);
+    margin-top: 75%;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size:16px;
+    }
+    h1 span{
+        font-size:12px;
+    }
+}
